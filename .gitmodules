@@ -3,10 +3,10 @@
 	url = https://github.com/ganglia/ganglia-web.git
 [submodule "files/gmetric"]
 	path = files/gmetric
-	url = https://github.com/nathan-gs/gmetric.git
+	url = https://github.com/Credico/gmetric.git
 [submodule "files/metric-python"]
 	path = files/metric-python
-	url = https://github.com/nathan-gs/gmond_python_modules.git
+	url = https://github.com/Credico/gmond_python_modules.git
 [submodule "files/proxy-aggregator"]
 	path = files/proxy-aggregator
-	url = https://github.com/nathan-gs/ganglia-proxy-aggregator.git
+	url = https://github.com/Credico/ganglia-proxy-aggregator.git
