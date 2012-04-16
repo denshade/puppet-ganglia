@@ -5,14 +5,13 @@ class ganglia::common {
 		home => "/var/lib/ganglia",
 		ensure => present,
 		shell => "/bin/false",
-		uid => '200',
-		gid => '200',
+		system => true,
 		require	=> Group['ganglia']
 	}
 
 
 	group { 'ganglia' :
-        gid     => 200,
+		system => true,
     }
 
     file { "/usr/local/share/ganglia" :
