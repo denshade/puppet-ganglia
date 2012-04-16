@@ -7,7 +7,19 @@ class ganglia::gmeta {
 
 	include concat::setup
 	include ganglia::common
-
+	
+	file { "/var/lib/ganglia/rrds"
+		ensure => directory,
+		group => ganglia,
+		owner => ganglia,
+	}
+	
+	file { "/var/lib/ganglia/dwoo"
+		ensure => directory,
+		group => www-data,
+		owner => www-data,
+	}
+	
 	$configuration_file = '/etc/ganglia/gmetad.conf'
 	$gridname	= ''
 
